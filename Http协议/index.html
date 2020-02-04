@@ -7,15 +7,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签 - uglylittle</title>
+<title>Http协议 - uglylittle</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="uglylittle">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;index.html">
+    <meta name="description" content="HTTP 概念： Hyper Text Transfer Protocol 超文本传输协议  1 .请求报文：客户端发送给服务器的数据  2 .响应报文：服务器发送给客户端的数据  历史版本：  1.0 ： 每次请求和响应都会建立新的连接  1.1 ： 复用连接    请求报文 1 .请求行：请求方法 请求的url 请求协议&#x2F;版本 ​            如：GET  &#x2F;login.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Http协议">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Http%E5%8D%8F%E8%AE%AE&#x2F;index.html">
 <meta property="og:site_name" content="uglylittle">
+<meta property="og:description" content="HTTP 概念： Hyper Text Transfer Protocol 超文本传输协议  1 .请求报文：客户端发送给服务器的数据  2 .响应报文：服务器发送给客户端的数据  历史版本：  1.0 ： 每次请求和响应都会建立新的连接  1.1 ： 复用连接    请求报文 1 .请求行：请求方法 请求的url 请求协议&#x2F;版本 ​            如：GET  &#x2F;login.html">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="article:published_time" content="2020-02-04T05:22:59.355Z">
+<meta property="article:modified_time" content="2020-02-04T06:31:08.086Z">
 <meta property="article:author" content="uglylittle">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
@@ -76,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="uglylittle" height="28">
+                <img src="/images/logo.svg" alt="Http协议" height="28">
             
             </a>
         </div>
@@ -93,7 +97,7 @@
                 <a class="navbar-item"
                 href="/categories">Categories</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/tags">Tags</a>
                 
                 <a class="navbar-item"
@@ -125,18 +129,152 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                标签
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-04T05:22:59.355Z">2020-02-04</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 306 个字)
+                </span>
+                
                 
             </div>
         </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Http协议
+            
+        </h1>
+        <div class="content">
+            <h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><ul>
+<li><p>概念： Hyper Text Transfer Protocol 超文本传输协议</p>
+<p> 1 .请求报文：客户端发送给服务器的数据</p>
+<p> 2 .响应报文：服务器发送给客户端的数据</p>
+</li>
+<li><p>历史版本：</p>
+<ul>
+<li><p>1.0 ： 每次请求和响应都会建立新的连接</p>
+</li>
+<li><p>1.1 ： 复用连接</p>
+</li>
+</ul>
+<ul>
+<li><p>请求报文</p>
+<p>1 .请求行：请求方法 请求的url 请求协议/版本</p>
+<p>​            如：GET  /login.html  HTTP/1.1</p>
+<p>2 .请求头：请求头名称：请求头值</p>
+<p>3 .请求空行: 空行（分割请求头和请求体）</p>
+<p>4 .请求体：GET方式下没有请求体</p>
+<p>​    </p>
+<p>字符串格式：</p>
+<figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">POST</span> <span class="hljs-string">/user/login.html</span>  <span class="hljs-string">HTTP/1.1</span></span><br><span class="line"><span class="hljs-string">Host:</span> 127.0.0.1:8000</span><br><span class="line"><span class="hljs-attribute">User-Agent</span>: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0</span><br><span class="line"><span class="hljs-attribute">Accept</span>: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</span><br><span class="line"><span class="hljs-attribute">Accept-Language</span>: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2</span><br><span class="line"><span class="hljs-attribute">Accept-Encoding</span>: gzip, deflate</span><br><span class="line"><span class="hljs-attribute">Connection</span>: keep-alive</span><br><span class="line"><span class="hljs-attribute">Upgrade-Insecure-Requests</span>: 1</span><br><span class="line"></span><br><span class="line">uname=aaa&amp;pass=111</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>响应报文</p>
+<p>1 .响应行：请求的协议 状态码 状态信息</p>
+<p>2 .响应头：请求头名称：请求头值</p>
+<p>3 .响应空行：空行</p>
+<p>4 .响应体：</p>
+</li>
+</ul>
+<pre><code>字符串格式：
+
+<figure class="highlight http hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 <span class="hljs-number">200</span> OK</span><br><span class="line"><span class="hljs-attribute">Date</span>: Tue, 04 Feb 2020 06:24:18 GMT</span><br><span class="line"><span class="hljs-attribute">Server</span>: WSGIServer/0.2 CPython/3.8.1</span><br><span class="line"><span class="hljs-attribute">Content-Type</span>: text/html; charset=utf-8</span><br><span class="line"><span class="hljs-attribute">X-Frame-Options</span>: SAMEORIGIN</span><br><span class="line"><span class="hljs-attribute">Vary</span>: Cookie</span><br><span class="line"><span class="hljs-attribute">Content-Length</span>: 778</span><br><span class="line"><span class="hljs-attribute">Set-Cookie</span>: csrftoken=jqXiMMrMK8BRRooDlrbEADD8W3OmdCNYNzHcOh8OpOCoPeGL8pMBUqiEZSEG7VVh; expires=Tue, 02-Feb-2021 06:24:18 GMT; Max-Age=31449600; Path=/</span><br></pre></td></tr></table></figure></code></pre>
+        </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="https://github.com/uglylittlehacker/uglylittlehacker.github.io/tree/master/images/zfb.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/" alt="微信"></div>
+</a>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<a class="button is-warning donate" onclick="document.getElementById(&#39;paypal-donate-form&#39;).submit()">
+    <span class="icon is-small">
+        <i class="fab fa-paypal"></i>
+    </span>
+    <span>Paypal</span>
+</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-donate-form">
+    <input type="hidden" name="cmd" value="_donations" />
+    <input type="hidden" name="business" value="/" />
+    <input type="hidden" name="currency_code" value="USD" />
+</form>
+
+                
+                
+<a class="button is-danger donate" href="/" target="_blank">
+    <span class="icon is-small">
+        <i class="fab fa-patreon"></i>
+    </span>
+    <span>Patreon</span>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/PythonBase/">
+                <span class="level-item">PythonBase</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
                 
 
 
@@ -667,7 +805,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="uglylittle" height="28">
+                    <img src="/images/logo.svg" alt="Http协议" height="28">
                 
                 </a>
                 <p class="is-size-7">
